@@ -1,0 +1,32 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: no-commit-to-branch
+      - id: check-symlinks
+      - id: destroyed-symlinks
+      - id: check-vcs-permalinks
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-ast
+      - id: check-case-conflict
+      - id: check-docstring-first
+      - id: check-json
+      - id: check-xml
+      - id: check-yaml
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: check-vcs-permalinks
+      - id: pretty-format-json
+      - id: detect-private-key
+      - id: debug-statements
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  -   repo: https://github.com/pre-commit/mirrors-eslint
+      rev: v9.17.0
+      hooks:
+        -   id: eslint
+            files: \.[jt]sx?$
+            types: [file]
