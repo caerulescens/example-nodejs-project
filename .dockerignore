@@ -1,0 +1,7 @@
+.git/
+.github/
+.gitignore
+.idea/
+node_modules/
+.pre-commit-config.yaml
+compose.yaml
