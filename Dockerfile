@@ -7,7 +7,7 @@ ARG USER=appuser
 ARG USER_GID=10001
 ARG USER_UID=10001
 
-FROM node:21-bookworm-slim AS base
+FROM node:${VERSION_NODE}-${VERSION_DEBIAN}-slim AS base
 LABEL maintainer="caerulescens <caerulescens.github@proton.me>"
 ARG USER
 ARG USER_GID
